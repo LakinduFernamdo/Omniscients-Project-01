@@ -27,7 +27,7 @@ function PatientRegister() {
     e.preventDefault();
     try {
       console.log(formData);
-      const response = await axios.post("http://localhost:8000/signUp", formData);
+      const response = await axios.post("http://localhost:5000/auth/signUp", formData);
       alert("Submission successful!"); //  successful submission
       console.log("Server Response:", response.data);
     } catch (error) {

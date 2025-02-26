@@ -21,7 +21,7 @@ function LoginPage() {
         event.preventDefault(); // Prevent default form submission first
         try {
             console.log(formData);
-            const response = await axios.post("http://localhost:8080/signIn", formData);
+            const response = await axios.post("http://localhost:5000/auth/signIn", formData);
             alert("Login successful!");
             console.log("Server Response:", response.data);
           // Redirect to the UserPage component
@@ -36,7 +36,7 @@ function LoginPage() {
     return (
         <div>
         <form onSubmit={handleLogin}>
-            <h2>Login</h2>
+            <h2>Sign In</h2>
             <label>Telephone Number</label>
             <Input
                 type="text"

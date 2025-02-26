@@ -1,11 +1,35 @@
-import React from 'react'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 function Logo(props) {
+  const navigate = useNavigate(); // Hook for navigation
+  function handleCklick() {
+    navigate('/'); // Redirects to the HomePage
+  }
   return (
     <div>
-        <img src={props.img} alt="Logo" className="rounded-circle" style={{ width: '70px', height: '70px' }} />
+    <button 
+  onClick={handleCklick} 
+  style={{ 
+ 
+    background: "none", 
+    padding: 0, 
+    cursor: "pointer" ,
+    borderRadius: "50%",
+  }}
+>
+  <img 
+    src={props.img} 
+    alt="Logo" 
+    className="logo" 
+    style={{ width: "80px", height: "80px" }} 
+  />
+</button>
+
+
     </div>
   )
 }
 
-export default Logo
+export default Logo;

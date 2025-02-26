@@ -1,4 +1,7 @@
 import React from 'react'
+import Swiper from '../HomeComp/Swiper/Swiper.jsx'
+import DropList from '../HomeComp/DropList/DropdownList.jsx'
+import Search from '../HomeComp/SearchBar/SearchBar.jsx'
 
 function HomePage() {
   return (
@@ -11,6 +14,11 @@ function HomePage() {
             reiciendis labore corrupti nesciunt, autem consectetur deleniti excepturi praesentium sed voluptas maiores!
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet molestias sint sunt animi quas nihil maiores debitis quo minima dolorem facere, neque impedit adipisci quod ad voluptates veniam 
             optio sit!</p>
+            <Swiper/>
+            <DropList/>
+            <Search/>
+
+
     </div>
   )
 }

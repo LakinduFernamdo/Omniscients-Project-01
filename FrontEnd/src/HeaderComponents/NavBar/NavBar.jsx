@@ -1,8 +1,8 @@
 import React from 'react';
-import UserAcountPage from '../UserAcc/UserAcountPage';
 import HambergBurron from '../Hamberg/HamButton';
 import AllNavLinks from '../NavLinks/AllNavLinks';
 import Logo from '../Logo/Logo.jsx';
+import SignIn from '../SignIn/SignIn.jsx';
 
 
 
@@ -13,8 +13,9 @@ function NavBar() {
         { name: "Doctors", href: "/doctors" },
         { name: "About", href: "/about" },
         { name: "Contact", href: "/contact" },
-        { name: "SignIn", href: "/signIn" },
         { name: "SignUp", href: "/signUp" },
+        
+       
     ];
 
     return (
@@ -24,9 +25,9 @@ function NavBar() {
                     <HambergBurron />
                     <AllNavLinks links={navLinks} />
 
-                    <Logo img="/Images/LogoTest.png" />
+                    <Logo img="Images/logo_EasyDoc.png" />
                     
-                    <UserAcountPage name="About LifeLine" href="/user-account" />
+                    <SignIn name="Sign In" />
 
 
 
